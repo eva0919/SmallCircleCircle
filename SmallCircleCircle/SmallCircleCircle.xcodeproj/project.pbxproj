@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		76CC55F5183C8A0900AC7BC5 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76CC55F4183C8A0900AC7BC5 /* Parse.framework */; };
 		76CC55F7183C8A4900AC7BC5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76CC55F6183C8A4900AC7BC5 /* AudioToolbox.framework */; };
 		76CC55F9183C8A5000AC7BC5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76CC55F8183C8A5000AC7BC5 /* CFNetwork.framework */; };
 		76CC55FB183C8A6000AC7BC5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76CC55FA183C8A6000AC7BC5 /* CoreLocation.framework */; };
@@ -17,6 +16,7 @@
 		76CC5603183C8A8500AC7BC5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76CC5602183C8A8500AC7BC5 /* Security.framework */; };
 		76CC5605183C8A8D00AC7BC5 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76CC5604183C8A8D00AC7BC5 /* StoreKit.framework */; };
 		76CC5607183C8A9700AC7BC5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76CC5606183C8A9700AC7BC5 /* SystemConfiguration.framework */; };
+		76CC5609183DF39300AC7BC5 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76CC5608183DF39300AC7BC5 /* Parse.framework */; };
 		8A18A81C1839233500B977B2 /* UIEngagedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A18A81B1839233500B977B2 /* UIEngagedViewController.m */; };
 		8A18A81F18392FB100B977B2 /* UIContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A18A81E18392FB100B977B2 /* UIContactViewController.m */; };
 		8A57D1C21838758800A1CF55 /* UIJoinActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A57D1C11838758800A1CF55 /* UIJoinActivityViewController.m */; };
@@ -62,7 +62,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		76CC55F4183C8A0900AC7BC5 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../Parse.framework; sourceTree = "<group>"; };
 		76CC55F6183C8A4900AC7BC5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		76CC55F8183C8A5000AC7BC5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		76CC55FA183C8A6000AC7BC5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -72,6 +71,7 @@
 		76CC5602183C8A8500AC7BC5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		76CC5604183C8A8D00AC7BC5 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		76CC5606183C8A9700AC7BC5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		76CC5608183DF39300AC7BC5 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		8A18A81A1839233500B977B2 /* UIEngagedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIEngagedViewController.h; sourceTree = "<group>"; };
 		8A18A81B1839233500B977B2 /* UIEngagedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIEngagedViewController.m; sourceTree = "<group>"; };
 		8A18A81D18392FB100B977B2 /* UIContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIContactViewController.h; sourceTree = "<group>"; };
@@ -145,8 +145,8 @@
 				8AEA1E371835E6F2003EA73D /* CoreGraphics.framework in Frameworks */,
 				76CC55F9183C8A5000AC7BC5 /* CFNetwork.framework in Frameworks */,
 				76CC55F7183C8A4900AC7BC5 /* AudioToolbox.framework in Frameworks */,
+				76CC5609183DF39300AC7BC5 /* Parse.framework in Frameworks */,
 				8AEA1E391835E6F2003EA73D /* UIKit.framework in Frameworks */,
-				76CC55F5183C8A0900AC7BC5 /* Parse.framework in Frameworks */,
 				8AEA1E351835E6F2003EA73D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,6 +255,7 @@
 		8AEA1E331835E6F2003EA73D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				76CC5608183DF39300AC7BC5 /* Parse.framework */,
 				76CC5606183C8A9700AC7BC5 /* SystemConfiguration.framework */,
 				76CC5604183C8A8D00AC7BC5 /* StoreKit.framework */,
 				76CC5602183C8A8500AC7BC5 /* Security.framework */,
@@ -264,7 +265,6 @@
 				76CC55FA183C8A6000AC7BC5 /* CoreLocation.framework */,
 				76CC55F8183C8A5000AC7BC5 /* CFNetwork.framework */,
 				76CC55F6183C8A4900AC7BC5 /* AudioToolbox.framework */,
-				76CC55F4183C8A0900AC7BC5 /* Parse.framework */,
 				8AEA1E341835E6F2003EA73D /* Foundation.framework */,
 				8AEA1E361835E6F2003EA73D /* CoreGraphics.framework */,
 				8AEA1E381835E6F2003EA73D /* UIKit.framework */,
@@ -571,6 +571,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/mikeva/Google\\ 雲端硬碟/研一/05行動電話程式設計/SmallCircleCircle-master",
+					"/Users/mikeva/Google\\ 雲端硬碟/研一/05行動電話程式設計/SmallCircleCircle-master/SmallCircleCircle",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SmallCircleCircle/SmallCircleCircle-Prefix.pch";
@@ -588,6 +589,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/mikeva/Google\\ 雲端硬碟/研一/05行動電話程式設計/SmallCircleCircle-master",
+					"/Users/mikeva/Google\\ 雲端硬碟/研一/05行動電話程式設計/SmallCircleCircle-master/SmallCircleCircle",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SmallCircleCircle/SmallCircleCircle-Prefix.pch";
