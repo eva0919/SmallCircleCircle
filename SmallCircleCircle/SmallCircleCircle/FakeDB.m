@@ -66,20 +66,13 @@ const float FAKE_DELAY = 1000;
     PFQuery *query = [PFQuery queryWithClassName:@"OrderList"];
     [query whereKey:@"userID" equalTo:facebookID];
     NSArray *objects = [query findObjects];
-    NSLog(@"1");
     for (PFObject *object in objects) {
         NSString * activityID = object[@"Detail"][@"activityID"];
-        NSLog(@" : >> 1.1");
         PFQuery * pfobject = [PFQuery queryWithClassName:@"CircleList"];
-        NSLog(@" : >> 1.2");
         PFObject * detail = [pfobject getObjectWithId:activityID];
-        NSLog(@" : >> 1.3");
         NSDictionary * temp = @{@"id":object.objectId,@"activityID":detail.objectId,@"name":detail[@"Detail"][@"name"],@"status":detail[@"Detail"][@"status"]};
-        NSLog(@" : >> 1.4");
         [result addObject:temp];
-        NSLog(@" : >> 1.5");
     }
-    NSLog(@"2");
     return result;
 }
 
