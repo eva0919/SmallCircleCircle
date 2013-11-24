@@ -231,10 +231,10 @@ enum AcitivityType
         
         NSIndexPath * path = [self.tableView indexPathForCell:sender];
         NSString* ActivityID = self.CreatedAcitivities[path.row][@"id"];
-        NSString* BuyID = self.JoinedAcitivities[path.row][@"id"];
+      //  NSString* BuyID = self.JoinedAcitivities[path.row][@"id"];
         
         NSDictionary* activityDetail = [self.Database GetActivityDetail:ActivityID];
-        NSArray* buyList = [self.Database GetBuyList:BuyID];
+        NSArray* buyList = [self.Database GetBuyList:ActivityID];
         
         viewController.activityDetail = activityDetail;
         viewController.buyList = buyList;

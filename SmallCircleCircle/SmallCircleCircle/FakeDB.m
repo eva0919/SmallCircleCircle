@@ -103,9 +103,9 @@ const float FAKE_DELAY = 1000;
     return DBsuccess;
 }
 
--(NSArray*)GetBuyList:(NSString*)activityID
+-(NSArray*)GetBuyList:(NSString*)activityID //:(NSString *)buyID
 {
-    NSArray *buylist = @[
+   /* NSArray *buylist = @[
      @{
          @"activityID":@"0",
          @"buyList":@[@(1),@(5)],
@@ -141,8 +141,19 @@ const float FAKE_DELAY = 1000;
          @"buyid":@"789",
          @"finished":@(NO),
          },
-       ];
+       ]; */
     
+   /* PFQuery * pfobject = [PFQuery queryWithClassName:@"CircleList"];
+    PFObject * circle = [pfobject getObjectWithId:activityID]; */
+    PFQuery * query = [PFQuery queryWithClassName:@"OrderList"];
+    [query whereKey:@"ActivityID" equalTo:activityID];
+    NSMutableArray * buyArray = [[NSMutableArray alloc] init];
+    [buyArray addObjectsFromArray:[query findObjects]];
+    NSMutableArray * buylist = [[NSMutableArray alloc] init];
+    for(PFObject *list in buyArray)
+    {
+        [buylist addObject:@{@"activityID":list[@"ActivityID"],@"buyList":list[@"Detail"][@"buyList"],@"phone":list[@"Detail"][@"phone"],@"facebook":@"0",@"name":@"包子",@"date":list[@"Detail"][@"date"],@"location":list[@"Detail"][@"location"],@"buyid":list.objectId,@"finished":@"NO"}];
+    }
     return buylist;
 }
 
